@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Law Assistant</title>
+    <link rel="stylesheet" href=" style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">CyberCheck
+            
+        </div>
+        <div class="login">
+            <button > Login</button>
+            </div>
+        
+    </header>
+    <div class="container">
+        <div class="chat-container" id="chatContainer">
+            <div class="message assistant-message">
+                <div class="message-header">Cyber Law Assistant</div>
+                <div class="message-content">
+                    Hello! I'm your Cyber Law assistant. Here are some frequently asked questions you can start with:
+                    <ul class="faq-list">
+                        <li>What are the basic cyber laws in India?</li>
+                        <li>What constitutes cybercrime?</li>
+                        <li>How can I report cybercrime?</li>
+                        <li>What are the penalties for cyber harassment?</li>
+                        <li>What are my digital privacy rights?</li>
+                    </ul>
+                    Feel free to ask any of these questions or your own question about cyber law!
+                </div>
+            </div>
+        </div>
+        <div class="loading" id="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="input-container">
+            <textarea 
+                id="userInput" 
+                placeholder="Ask a question about Cyber Law..."
+                rows="1"
+            ></textarea>
+            <button class="send-button" id="sendButton">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
