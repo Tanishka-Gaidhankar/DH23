@@ -12,7 +12,7 @@ tokenizer = AutoTokenizer.from_pretrained("markusbayer/CySecBERT")
 model = AutoModel.from_pretrained("markusbayer/CySecBERT")
 
 
-genai.configure(api_key="AIzaSyAKeanOwPuWnxlpu8IqxO6eRgNa00XTaGg")
+genai.configure(api_key="")
 
 app = Flask(_name_)
 
